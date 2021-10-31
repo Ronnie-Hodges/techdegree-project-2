@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    font-weight: 300;
+    background: white;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: rgba(71, 99, 194, 0.822);
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.student-h1 {
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.n {
+    text-decoration: none;
+}
+
+.home, .contact,
+.portfolio-nav {
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: 2px 1px;
+    background-color: grey;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+.profile-img {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 60%;
+    height: 60%;
+}
+
+.profile-content {
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin-right: 0;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 320px;
+    background-color: grey;
+}
+
+.portfolio-h3 {
+    text-align: center; 
+    padding: 50px;
+}
+
+.img {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+    height: 100%;
+}
+
+.h3 {
+    text-align: center; 
+}
+
+.content {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}   
+
+.footer-title {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.content-footer {
+   text-align: center;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+
+.phone-email-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+.phone-email {
+    text-align: center;
+}
+
+.bottom-footer {
+    display: flex;
+    max-width: 320px;
+}
+
+.name-footer {
+    flex-grow: 10;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    body {
+        padding-right: 0;
+        padding-left: 0;
+        
+    }
+    .portfolio-nav2, 
+    .home2, .contact2 {
+    display: none;
+    max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 321px;
+        max-width: 768px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home, .contact,
+    .portfolio-nav{
+        border-radius: 5px;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    .profile-content,
+    .profie-img, .profile {
+        display: flex;
+    }
+
+    .profile {
+        flex-direction: row; 
+        padding-top: 30px;
+        min-width: 321px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-img {
+        padding-left: calc(15px/2);
+        width: calc(40% - calc(15px/2));
+        height: 40%;
+    }
+    
+    .profile-content {
+        text-align: left;
+        font-size: 24px;
+        width: calc(60% - calc(15px/2));
+        order: -1;
+        padding: 0;
+        padding-right: calc(15px/2);
+        margin-top: 0;
+        margin-bottom: auto;
+    }
+
+    .container, .c1, .c2,
+    .c3, .c4, .c5, .c6 {
+        display: flex;
+    }
+
+    .container { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        min-width: 321px;
+        max-width: 768px;
+    }  
+
+    .c1, .c2, .c3, 
+    .c4, .c5, .c6  {
+       /* display: flex;*/
+        flex-direction: column;
+        width: calc(50% - 10px);
+        margin-bottom: auto;
+    }
+
+    .c1, .c3, .c5 {
+        margin-right: 10px;
+    }
+
+    .c2, .c4, .c6 {
+        margin-left: 10px;
+    }
+
+    .h3 {
+        text-align: center; 
+        margin-bottom: 0;
+    }
+    
+    .content {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+
+    .content-footer {
+        text-align: center;
+        padding-right: 20%;
+        padding-left: 20%;
+     }
+
+    .phone-email-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        min-width: 321px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .footer-title {
+        padding-top: 30px;
+    }
+
+    .to-top {
+        display: none;
+    }
+
+    .bottom-footer {
+        display: flex;
+        min-width: 321;
+        max-width: 768px;
+    }
+
+    .portfolio-nav2,
+    .home2, .contact2 {
+        text-align: right;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    header, .nav-container, .student {
+        display: flex;
+    }
+
+    header {
+        min-width: 769px;
+        max-width: 1024px;
+        flex-direction: row;
+    }
+
+    .student {
+        margin-left: 5px;
+        margin-right: auto;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        min-width: 769;
+        max-width: 1024;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .profile, .profile-img,
+    .profile-content {
+        display: flex;
+
+    }
+
+    .profile {
+        flex-direction: row; 
+        justify-content: space-evenly;
+        padding-top: 30px;
+        min-width: 769px;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-img {
+        padding-left: 20px;
+        width: calc(45% - 20px);
+    }
+    
+    .profile-content {
+        text-align: left;
+        font-size: 24px;
+        width: calc(55% - 20px);
+        order: -1;
+        padding-right: 50px;
+        padding-left: 0;
+        padding-top: 0;
+        margin-bottom: auto;
+        margin-top: 0;
+    }
+
+    .container, .c1, .c2,
+    .c3, .c4, .c5, .c6 {
+        display: flex;
+    }
+
+    .container { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        min-width: 768px;
+        max-width: 1024px;
+    }  
+
+    .c1, .c2, .c4, .c5 {
+        margin-right: 10px;
+    }
+
+    .c2, .c3, .c5, .c6 {
+        margin-left: 10px;
+    }
+
+    .c1, .c2, .c3, 
+    .c4, .c5, .c6  {
+        display: flex;
+        flex-direction: column;
+        width: calc(33% - (40px/3));
+        margin-bottom: auto;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .content{
+        padding-bottom: 30px;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        min-width: 769px;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .footer-title {
+        padding-top: 30px;
+    }
+
+    .content-footer {
+        align-self: center;
+        width: 55%;
+        align-items: center;
+     }
+
+    .phone-email-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1024px;
+    }
+
+    .to-top {
+        display: none;
+    }
+
+    .bottom-footer {
+        min-width: 769px;
+        max-width: 1024px;
+    }
+
+    .portfolio-nav2,
+    .home2, .contact2 {
+        text-align: right;
+    }
+
+    .portfolio-nav,
+    .home {
+       padding-right: 10px;
+    }
+
+    .portfolio-nav,
+    .contact {
+        padding-left: 10px;
+    }
+
+
+}
+
+
+
+
+
