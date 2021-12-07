@@ -9,6 +9,8 @@ body {
     background: white;
     margin-right: 0;
     margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: rgba(71, 99, 194, 0.822);
 }
 
@@ -19,7 +21,6 @@ body {
 .student {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -30,8 +31,9 @@ body {
 }
 
 .nav-container {
-    display: flex;
+    display: flexd;
     flex-direction: column;
+    width: 100%;
     max-width: 320px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -62,6 +64,7 @@ body {
     padding-bottom: 40px;
     padding-right: 10px;
     padding-left: 10px;
+    width: 100%;
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +92,7 @@ body {
     padding-top: 40px;
     padding-right: 10px;
     padding-left: 10px;
+    width: 100%;
     max-width: 320px;
     background-color: grey;
 }
@@ -119,6 +123,7 @@ body {
 footer {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -141,6 +146,7 @@ footer {
 .phone-email-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 320px;
 }
 
@@ -150,28 +156,30 @@ footer {
 
 .bottom-footer {
     display: flex;
+    width: 100%;
     max-width: 320px;
 }
 
 .name-footer {
     flex-grow: 10;
     margin-right: auto;
+} 
+
+
+body {
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+.portfolio-nav2, 
+.home2, .contact2 {
+display: none;
+width: 100%;
+max-width: 320px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 320px) {
-    body {
-        padding-right: 0;
-        padding-left: 0;
-        
-    }
-    .portfolio-nav2, 
-    .home2, .contact2 {
-    display: none;
-    max-width: 320px;
-    }
-}
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 321px) {
 
     header {
         display: flex;
@@ -179,9 +187,10 @@ footer {
     }
 
     .nav-container {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        min-width: 321px;
+        width: 100%;
         max-width: 768px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -207,7 +216,7 @@ footer {
     .profile {
         flex-direction: row; 
         padding-top: 30px;
-        min-width: 321px;
+        width: 100%;
         max-width: 768px;
         margin-left: auto;
         margin-right: auto;
@@ -216,6 +225,7 @@ footer {
     .profile-img {
         padding-left: calc(15px/2);
         width: calc(40% - calc(15px/2));
+        max-width: 768px;
         height: 40%;
     }
     
@@ -223,6 +233,7 @@ footer {
         text-align: left;
         font-size: 24px;
         width: calc(60% - calc(15px/2));
+        max-width: 768px;
         order: -1;
         padding: 0;
         padding-right: calc(15px/2);
@@ -239,7 +250,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         flex-grow: 1;
-        min-width: 321px;
+        width: 100%;
         max-width: 768px;
     }  
 
@@ -248,6 +259,7 @@ footer {
        /* display: flex;*/
         flex-direction: column;
         width: calc(50% - 10px);
+        max-width: 768px;
         margin-bottom: auto;
     }
 
@@ -280,13 +292,14 @@ footer {
     .phone-email-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
         max-width: 768px;
     }
 
     footer {
         display: flex;
         flex-direction: column;
-        min-width: 321px;
+        width: 100%;
         max-width: 768px;
         margin-left: auto;
         margin-right: auto;
@@ -302,7 +315,7 @@ footer {
 
     .bottom-footer {
         display: flex;
-        min-width: 321;
+        width: 100%;
         max-width: 768px;
     }
 
@@ -313,14 +326,14 @@ footer {
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
 
     header, .nav-container, .student {
         display: flex;
     }
 
     header {
-        min-width: 769px;
+        width: 100%;
         max-width: 1024px;
         flex-direction: row;
     }
@@ -328,16 +341,19 @@ footer {
     .student {
         margin-left: 5px;
         margin-right: auto;
+        width: 50%;
     }
 
     .nav-container {
         flex-direction: row;
-        min-width: 769;
+        width: 50%;
         max-width: 1024;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: 1em;
+        margin-left: 1em;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .profile, .profile-img,
@@ -350,7 +366,7 @@ footer {
         flex-direction: row; 
         justify-content: space-evenly;
         padding-top: 30px;
-        min-width: 769px;
+        width: 100%;
         max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
@@ -383,16 +399,16 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         flex-grow: 1;
-        min-width: 768px;
+        width: 100%;
         max-width: 1024px;
     }  
 
     .c1, .c2, .c4, .c5 {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .c2, .c3, .c5, .c6 {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .c1, .c2, .c3, 
@@ -400,6 +416,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: calc(33% - (40px/3));
+        max-width: 1024;
         margin-bottom: auto;
     }
 
@@ -415,7 +432,7 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        min-width: 769px;
+        width: 100%;
         max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
@@ -434,6 +451,7 @@ footer {
     .phone-email-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
         max-width: 1024px;
     }
 
@@ -442,7 +460,7 @@ footer {
     }
 
     .bottom-footer {
-        min-width: 769px;
+        width: 100%;
         max-width: 1024px;
     }
 
@@ -453,12 +471,12 @@ footer {
 
     .portfolio-nav,
     .home {
-       padding-right: 10px;
+       padding-right: 1px;
     }
 
     .portfolio-nav,
     .contact {
-        padding-left: 10px;
+        padding-left: 1px;
     }
 
 
